@@ -137,39 +137,45 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {/* Service 1 */}
-            <div className="bg-white rounded-xl p-8 sm:p-10 shadow-soft hover:shadow-soft-lg transition-shadow">
-              <div className="text-5xl mb-4">🦵</div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-gp-text mb-4">Prosthetic Fitting</h3>
-              <p className="text-base sm:text-lg text-gp-text opacity-85 mb-4">
-                Precise, custom-fitted prosthetics designed for comfort, mobility, and confidence.
-              </p>
-              <a href="#contact" className="inline-block text-gp-teal font-semibold hover:underline">
-                Learn More →
-              </a>
+            <div className="bg-white rounded-xl overflow-hidden shadow-soft">
+              <img src="/images/service-prosthetics.jpg" alt="Prosthetic Fitting" className="w-full h-40 sm:h-48 object-cover" loading="lazy" />
+              <div className="p-6 sm:p-8">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gp-text mb-4">Prosthetic Fitting</h3>
+                <p className="text-base sm:text-lg text-gp-text opacity-85 mb-4">
+                  Precise, custom-fitted prosthetics designed for comfort, mobility, and confidence.
+                </p>
+                <a href="#contact" className="inline-block text-gp-teal font-semibold hover:underline">
+                  Learn More →
+                </a>
+              </div>
             </div>
 
             {/* Service 2 */}
-            <div className="bg-white rounded-xl p-8 sm:p-10 shadow-soft hover:shadow-soft-lg transition-shadow">
-              <div className="text-5xl mb-4">✨</div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-gp-text mb-4">Prosthetics Galileo Innovation</h3>
-              <p className="text-base sm:text-lg text-gp-text opacity-85 mb-4">
-                Advanced biomechanical analysis using cutting-edge Galileo technology.
-              </p>
-              <a href="#contact" className="inline-block text-gp-teal font-semibold hover:underline">
-                Learn More →
-              </a>
+            <div className="bg-white rounded-xl overflow-hidden shadow-soft">
+              <div className="h-40 sm:h-48 bg-gradient-to-br from-gp-teal to-gp-gold opacity-40"></div>
+              <div className="p-6 sm:p-8">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gp-text mb-4">Prosthetics Galileo Innovation</h3>
+                <p className="text-base sm:text-lg text-gp-text opacity-85 mb-4">
+                  Advanced biomechanical analysis using cutting-edge Galileo technology.
+                </p>
+                <a href="#contact" className="inline-block text-gp-teal font-semibold hover:underline">
+                  Learn More →
+                </a>
+              </div>
             </div>
 
             {/* Service 3 */}
-            <div className="bg-white rounded-xl p-8 sm:p-10 shadow-soft hover:shadow-soft-lg transition-shadow">
-              <div className="text-5xl mb-4">💬</div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-gp-text mb-4">Patient Consultation</h3>
-              <p className="text-base sm:text-lg text-gp-text opacity-85 mb-4">
-                Comprehensive evaluations and personalized treatment planning for your unique needs.
-              </p>
-              <a href="#contact" className="inline-block text-gp-teal font-semibold hover:underline">
-                Learn More →
-              </a>
+            <div className="bg-white rounded-xl overflow-hidden shadow-soft">
+              <img src="/images/service-consultation.jpg" alt="Patient Consultation" className="w-full h-40 sm:h-48 object-cover" loading="lazy" />
+              <div className="p-6 sm:p-8">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gp-text mb-4">Patient Consultation</h3>
+                <p className="text-base sm:text-lg text-gp-text opacity-85 mb-4">
+                  Comprehensive evaluations and personalized treatment planning for your unique needs.
+                </p>
+                <a href="#contact" className="inline-block text-gp-teal font-semibold hover:underline">
+                  Learn More →
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -289,24 +295,26 @@ export default function Home() {
       {/* Team Callout */}
       <section id="team" className="py-16 sm:py-20 lg:py-28 bg-gp-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gp-text mb-8">
-              Meet Cara Negri, Clinical Director
-            </h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-gp-text mb-12">
+            Meet Cara Negri, Clinical Director
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 max-w-4xl mx-auto items-center">
+            <div className="order-2 md:order-1">
+              <img src="/images/team-professional.jpg" alt="Cara Negri, Clinical Director" className="w-full rounded-2xl shadow-soft" loading="lazy" />
+            </div>
             
-            <div className="bg-white rounded-2xl p-8 sm:p-12 shadow-soft mb-8">
-              <div className="text-6xl mb-6">👩‍⚕️</div>
+            <div className="order-1 md:order-2">
               <p className="text-lg sm:text-xl text-gp-text leading-relaxed mb-6">
                 Cara Negri brings over two decades of clinical expertise and passion for patient outcomes to her role as Clinical Director at Gainesville Prosthetics. Her commitment to personalized care and continuous education has shaped our facility into a leading center for prosthetic excellence.
               </p>
-              <p className="text-lg sm:text-xl text-gp-text leading-relaxed">
+              <p className="text-lg sm:text-xl text-gp-text leading-relaxed mb-8">
                 Cara is dedicated to training the next generation of prosthetics professionals and staying at the forefront of biomechanical innovation. Her vision guides every decision we make.
               </p>
+              <button className="bg-gp-gold hover:bg-opacity-90 text-white px-8 py-3 rounded-lg font-semibold shadow-soft-lg transition-all">
+                Meet Our Full Team
+              </button>
             </div>
-
-            <button className="bg-gp-gold hover:bg-opacity-90 text-white px-8 py-3 rounded-lg font-semibold shadow-soft-lg transition-all">
-              Meet Our Full Team
-            </button>
           </div>
         </div>
       </section>
